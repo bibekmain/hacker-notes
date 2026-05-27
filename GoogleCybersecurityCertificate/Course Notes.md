@@ -55,7 +55,6 @@ Cybersecurity (security): the practice of ensuring confidentiality, integrity, a
 
 Threat actor: any person or group who poses a security risk.
 #### Benefits of security
-
 - Protect against
 External threat: someone outside of the organization trying to gain access to private information, networks, or devices.
 &&
@@ -66,7 +65,6 @@ Internal threat: current or former employees, external vendors, trusted partners
 - Maintain brand trust
 
 Potential Job titles:
-
 - Security analyst or specialist
 - Cybersecurity analyst or specialist
 - Security operation center or SOC ​analyst
@@ -88,9 +86,7 @@ Phishing types:
 - Smishing: Using text messages to trick users, in order to obtain sensitive information or to impersonate a known source.
 
 #### Malware
-
 Malware is software designed to harm devices or networks. Primary objective is to obtain money or intelligence.
-
 - **Viruses**: Malicious code written to interfere with computer operations. A virus needs to be initiated by a threat actor who transmits the virus via a malicious attachment or file download. When someone opens the attachment, the virus hides itself in the now-infected system. When the infected files are opened, the virus inserts its own code to damage and/or destroy data in the system.
 - **Worms**: Malware that can replicate and spread itself across systems on its own. Worm doesn’t need to be downloaded by a user but spreads from an already infected computer to other devices on the same network.
 - **Ransomware**: A malicious attack where threat actors encrypt an organization’s data and demand payment to restore access.
@@ -114,7 +110,6 @@ Malware is software designed to harm devices or networks. Primary objective is t
 - Growth mindset: willingness to learn
 - Diverse perspective
 #### Technical skills to focus on
-
 - Programming languages
 - Computer forensics: when security analysts need to review vulnerabilities, they conduct a periodic security audit.
 - Security information and event management tools (SIEM)
@@ -164,28 +159,27 @@ Why are they so effective?
 
 ---  
 
-## CISSP security domains
+### CISSP security domains
 
 These are core security concepts. These domains are related. Gaps in one domain can cause massive potential damage/loss.
-
-### Security and Risk Management
+#### Security and Risk Management
 Defines security goals and objectives, risk mitigation, compliance, business continuity, and the law.
-### Asset Security
+#### Asset Security
 Securing digital and physical assets, storing, maintaining, retaining, and destroying data.
-### Security Architecture and Engineering
+#### Security Architecture and Engineering
 Optimizing data security by ensuring effective tools, systems, and processes are in place. Configuring a firewall, …
-### Communications and Network Security
+#### Communications and Network Security
 Managing and securing physical networks and wireless communications. Creating network policies to prevent and mitigate exposure to threat actors.
-### Identity and access management
+#### Identity and access management
 Keep data secure, ensure users follow established policies to control and manage physical assets, like office spaces, and logical assets, such as networks and apps. Validating identity.
-### Security assessment and testing
+#### Security assessment and testing
 Conducting security control testing, collecting and analyzing data, and conducting security audits to monitor for risks, threats, and vulnerabilities. e.g. regular audits of user permissions.
-### Security operations
+#### Security operations
 Conducting investigations and implementing preventative measures. Follow the organization's policies ​and procedures to quickly stop the potential threat
-### Software development security
+#### Software development security
 Uses secure coding practices, which are a set of recommended guidelines that are used to create secure applications and services.
 
-## Types of Attacks
+### Types of Attacks
 -- not an exhaustive list --
 #### Password attack
 An attempt to access password-secured devices, systems, networks, or data. 
@@ -193,7 +187,6 @@ later in this course:
 * Brute force
 * Rainbow table
 Falls under the communication and network security domain.
-
 #### Social engineering attack
 A manipulation technique that exploits human error to gain private information, access, or valuables.
 Falls under security and risk management domain.
@@ -204,13 +197,11 @@ Some forms of physical attacks:
 - Malicious flash drive
 - Card cloning and skimming
 Physical attacks fall under the asset security domain.
-
 #### Adversarial artificial intelligence
 Manipulating [AI and ML](https://www.nccoe.nist.gov/ai/adversarial-machine-learning) technology to conduct attacks more efficiently. Falls under:
 - communication and network security
 - identity and access management
 domains.
-
 #### Supply-chain attack
 Targets systems, applications, hardware, and/or software to locate a vulnerability where malware can be deployed.
 Any item sold undergoes a process that involves third parties means a security breach can occur at any point in the supply chain. These attacks can affect multiple organizations and their employees. Falls under:
@@ -218,7 +209,6 @@ Any item sold undergoes a process that involves third parties means a security b
 - security architecture
 - security operations
 domains.
-
 #### Cryptographic attack
 Affects secure forms of communication between a sender and intended recipient like:
 * Birthday
@@ -228,35 +218,30 @@ Falls under communication and network security domain.
 
 The 8 CISSP domains can help an org fortify and prepare for a data breach. Data breaches can be simple or complex and fall under one or more domains. These methods of attack are a few of many.
 
-## Understand Attackers
+### Understand Attackers/Threats
 
-### Advanced persistent threats (APTs)
-APTs have significant expertise assessing an organization's network without authorization. APTs tend to research their targets (large corps or gov entities) in advance and can remain undetected for an extended period of time. Intentions and motivations can include but are not limited to:
+#### Advanced persistent threats (APTs)
+APTs have significant expertise assessing an organization's network without authorization. APTs tend to research their targets (e.g. arge corps or gov entities) in advance and can remain undetected for an extended period of time. Intentions and motivations can include but are not limited to:
 - Damaging critical infrastructure like power grid or natural resources.
 - Gain access to intellectual property, like trade secrets or patents.
-
-### Insider Threat
+#### Insider Threat
 Insider threats abuse their authorized access to obtain data that may harm an org. Intentions and motivation:
 - Sabotage
 - Corruption
 - Espionage
 - Unauthorized data access or leaks.
-
-### Hacktivists
+#### Hacktivists
 Threat actors that are driven by a political agenda. They abuse digital tech to accomplish their goals:
 - Demonstrations
 - Propaganda
 - Social change campaigns
 - Fame
-
 ### Hacker Types
 A hacker is any person who uses computers to gain access to computer systems, networks, or data. Three main categories of hackers:
 #### Authorized hacker/Ethical hacker
 They follow a code of ethics and adhere to the law to conduct organizational risk evaluations. They are motivated to safeguard people and organizations from malicious threat actors.
-
 #### Semi-authorized hacker/Researcher
 They search for vulnerabilities but don't take advantage of the vulnerabilities they find.
-
 #### Unauthorized hackers/Unethical hacker
 Malicious threat actors who do not follow or respect the law. Goal is to collect and sell confidential data for financial gain.
 
@@ -264,4 +249,207 @@ There are also hackers who consider themselves vigilantes. Their main goal is to
 
 Threat actors are defined by their malicious intent. Hackers are defined by their technical skills and motivations. Understanding a threat actor's motivations and intentions will help me be better prepared to protect an org and its people from malicious attacks.
 
+### Terms and definitions from Course 1, Module 2
+
+**Adversarial artificial intelligence (AI):** A technique that manipulates artificial intelligence (AI) and machine learning (ML) technology to conduct attacks more efficiently 
+
+**Business Email Compromise (BEC):** A type of phishing attack where a threat actor impersonates a known source to obtain financial advantage
+
+**CISSP:** Certified Information Systems Security Professional is a globally recognized and highly sought-after information security certification, awarded by the International Information Systems Security Certification Consortium
+
+**Computer virus:** Malicious code written to interfere with computer operations and cause damage to data and software
+
+**Cryptographic attack:** An attack that affects secure forms of communication between a sender and intended recipient
+
+**Hacker:** Any person who uses computers to gain access to computer systems, networks, or data
+
+**Malware:** Software designed to harm devices or networks
+
+**Password attack:** An attempt to access password secured devices, systems, networks, or data
+
+**Phishing:** The use of digital communications to trick people into revealing sensitive data or deploying malicious software
+
+**Physical attack:** A security incident that affects not only digital but also physical environments where the incident is deployed
+
+**Physical social engineering:** An attack in which a threat actor impersonates an employee, customer, or vendor to obtain unauthorized access to a physical location
+
+**Social engineering:** A manipulation technique that exploits human error to gain private information, access, or valuables
+
+**Social media phishing:** A type of attack where a threat actor collects detailed information about their target on social media sites before initiating the attack
+
+**Spear phishing:** A malicious email attack targeting a specific user or group of users, appearing to originate from a trusted source
+
+**Supply-chain attack:** An attack that targets systems, applications, hardware, and/or software to locate a vulnerability where malware can be deployed
+
+**USB baiting:** An attack in which a threat actor strategically leaves a malware USB stick for an employee to find and install to unknowingly infect a network
+
+**Virus:** refer to “computer virus”
+
+**Vishing:** The exploitation of electronic voice communication to obtain sensitive information or to impersonate a known source
+
+**Watering hole attack**: A type of attack when a threat actor compromises a website frequently visited by a specific group of users
+
+
+## Protect against threats, risks, and vulnerabilities
+Know your threat model. If you understand the potential threats out there, you will be better prepared for an attack.
+
+Identify critical assets and risks.
+Implement necessary frameworks and controls.
+
+### Security Frameworks 
+are guidelines used to build plans to help mitigate risk to data and privacy.
+The Purpose:
+- Protecting PII
+- Securing financial information
+- Identify security weaknesses
+- Manage organizational risks
+- Align security with business goals
+
+Frameworks have 4 core components
+1. *Identifying and documenting security goals.* Say if an org wants to comply with GDPR. An analyst would be asked to identify and documents areas where an org is out of compliance.
+2. *Setting guidelines to achieve security goals.* Org may need to develop new policies for how to handle data requests from individual users.
+3. *Implement strong security processes.* A security analyst may help design procedures to make sure the org complies with verified user requests. Say when a user attempts to update or delete their user profile. 
+4. *Monitor and communicate results.* Tell people who need to know.
+
+### Security Control
+Safeguards designed to reduce specific security risks.
+e.g. company may have guideline to train all employees on privacy.
+As a security analyst, I may have a program that tracks weather an employee has completed their training or not.
+Security controls are used alongside frameworks to meet security goals and processes are implemented correctly and that compliance is met.
+
+### CIA Triad
+A foundational model that informs how orgs consider risk when setting up systems and security policies. These are the 3 foundational principles to establish appropriate controls that mitigate threats, risks and vulnerabilities:
+- Confidentiality: Only authorized users can access specific assets or data.
+- Integrity: Data needs to be correct, authentic, and reliable.
+- Availability: Data is accessible to those who are authorized to access it.
+
+**Asset**: an item perceived to have value to an organization. Value is determined by the cost associated with the asset in question.
+For example, a program that stores social security numbers of users (which is an asset to the org) should have different  restrictions than a program that looks for web requests and fulfills them.
+### Controls, frameworks, and compliance
+A security lifecycle is a constantly evolving set of policies and standards. Security frameworks provide a structured approach to implementing a security lifecycle.
+
+### Some of the frameworks out there
+**Note:** Specifications and guidelines can change depending on the type of organization you work for.
+#### NIST Cybersecurity Framework (CSF)
+A voluntary framework that consists of standards, guidelines, and best practices to manage cyber security risk. Used as a baseline to assess short and long term risks.
+https://www.nist.gov/cyberframework
+#### NIST Risk Management Framework (RMF)
+For risk management.
+https://csrc.nist.gov/projects/risk-management/about-rmf
+
+#### Federal Energy Regulatory Commission - North American Electric Reliability Corporation (FERC-NERC)
+This regulation applies to all organizations that work with electricity or that are involved with the US and North American power grid. These orgs have an obligation to prepare for, mitigate, and report any potential security incident that can negatively affect the power grid. They are legally required to adhere to the **Critical Infrastructure Protection (CIP)** reliability standards defined by the FERC.
+
+#### The federal Risk and Authorization Management Program (FedRAMP)
+US federal government program that standardized security assessment, authorization, monitoring, and handling of cloud services and product offerings. The purpose is to provide consistency across the government sector and third-party cloud providers.
+
+#### Center for Internet Security (CIS)
+A nonprofit with multiple areas of emphasis. That provides a set of controls to safeguard systems and networks against attacks. It helps orgs establish a better plan for defense. CIS also provides actionable controls that may be followed if a security incident occurs.
+
+#### General Data Protection Regulation (GDPR)
+A general data regulation in the EU that protects the processing of EU residents' data and their right to privacy in and outside of EU territory.
+e.g. if an org is not being transparent and is holding information about an EU citizen that it shouldn't have, it has infringed and can result in org paying a fine.
+If a breach occurs and an EU citizen's data is compromised, they must be informed. The affected org has 72 hours to notify the EU citizen about the breach.
+
+#### Payment Card Industry Data Security Standard (PCI DSS)
+
+
+#### Health Insurance Portability and Accountability Act (HIPPA)
+
+
+#### International Organization for Standardization (ISO)
+
+
+#### System and Organizations Controls (SOC type 1, SOC type 2)
+
+----- REVISIT LATER -----
+
+There are a number of regulations that are frequently revised. You are encouraged to keep up-to-date with changes and explore more frameworks, controls, and compliance. Two suggestions to research: the Gramm-Leach-Bliley Act and the Sarbanes-Oxley Act.
+
+If an org fails to meet a regulation:
+* gov starts to look at org, audits, inquiries
+* vendors, businesses, users, start questioning org
+* legal action
+
+Consult the relevant website in the jurisdiction one has a question for to stay up to date. PII regulations are very complex. Different countries regulate it at different levels. Thinking about regulation in a specific country or law, its best to look for legal counsel to inform me on the best way to go about such a thing.
+
+### Ethics in Cyber Security
+My obligation is to adhere to the policies and protocols I have been trained to follow. Security professionals and teams are given an elevated privilege and should respect that privilege.
+
+It would be my ethical duty to keep PII safe and secure.
+
+Best response to a data request (even my outranking members) is to adhere to the policies and procedures set by the org.
+
+Technology is constantly evolving and so are hackers' tactics and techniques. Having a strong sense of ethics can guide my decisions to ensure proper processes and procedures are followed.
+
+##### Ethics of Counterattacks
+In the US, deploying a counterattack on a threat actor is illegal because of laws like:
+* Computer Fraud and Abuse Act of 1986
+* Cybersecurity Information Sharing Act of 2015
+* among others
+Only individuals in the US allowed to counterattack are approved employees of the federal government or military.
+
+The International Court of Justice (ICJ), which updates its guidance regularly, states that a person or group can counterattack if: 
+- The counterattack will only affect the party that attacked first.
+- The counterattack is a direct communication asking the initial attacker to stop.
+- The counterattack does not escalate the situation.
+- The counterattack effects can be reversed.
+
+Organizations typically do not counterattack because the above scenarios and parameters are hard to measure. There is a lot of uncertainty dictating what is and is not lawful, and at times negative outcomes are very difficult to control.
+
+**Confidentiality** means that only authorized users can access specific assets or data. Confidentiality as it relates to professional ethics means that there needs to be a high level of respect for privacy to safeguard private assets and data.
+
+**Privacy protection** means safeguarding PII and SPII. Professionals should hold an ethical obligation to secure private information, identify security vulnerabilities, manage organizational risks, and align security with business goals.
+
+**Laws** are rules recognized by a community and enforced by a governing entity. As a security professional, I will have an ethical obligation to protect my org, its internal infrastructure, and the people involved with the organization. To do this:
+- remain unbiased, conduct work honestly, responsibly, and with respect for the law
+- be transparent, just, and rely on evidence
+- be consistently invested in the work I am doing to appropriately address issues
+- stay informed, strive to advance skills, contribute to the betterment of the cyber landscape
+
+Examples of unethical behavior:
+- taking shortcuts, laziness
+- sharing information in wrong ways
+
+When faced with a difficult decision, it's best to think about the consequences of said decision would be.
+
+### **Terms and definitions from Course 1, Module 3**
+
+**Asset:** An item perceived as having value to an organization 
+
+**Availability:** The idea that data is accessible to those who are authorized to access it
+
+**Compliance:** The process of adhering to internal standards and external regulations
+
+**Confidentiality:** The idea that only authorized users can access specific assets or data
+
+**Confidentiality, integrity, availability (CIA) triad:** A model that helps inform how organizations consider risk when setting up systems and security policies
+
+**Hacktivist:** A person who uses hacking to achieve a political goal
+
+**Health Insurance Portability and Accountability Act (HIPAA):** A U.S. federal law established to protect patients' health information
+
+**Integrity:** The idea that the data is correct, authentic, and reliable
+
+**National Institute of Standards and Technology (NIST) Cyber Security Framework (CSF):** A voluntary framework that consists of standards, guidelines, and best practices to manage cybersecurity risk
+
+**Privacy protection:** The act of safeguarding personal information from unauthorized use
+
+**Protected health information (PHI):** Information that relates to the past, present, or future physical or mental health or condition of an individual
+
+**Security architecture:** A type of security design composed of multiple components, such as tools and processes, that are used to protect an organization from risks and external threats
+
+**Security controls:** Safeguards designed to reduce specific security risks
+
+**Security ethics:** Guidelines for making appropriate decisions as a security professional
+
+**Security frameworks:** Guidelines used for building plans to help mitigate risk and threats to data and privacy
+
+**Security governance:** Practices that help support, define, and direct security efforts of an organization
+
+**Sensitive personally identifiable information (SPII):** A specific type of PII that falls under stricter handling guidelines
+
+
+-- note: I have realized that these notes I am writing are merely a transcription of the content on coursera. I will attempt to make a change in how I write my notes from now on, trying to "embrace chaos", all the while ensuring a buffer before I write down anything. For instance I will not be writing a note while looking at a sentence as that just leads to me copying. I will read or listen to a concept, think about it for a good while to formulate what it means in my mind, then take notes. Writing a word for word textbook is not a good way to take notes as rereading it will be boring and inefficient. I need to spend 80% of my time thinking and problem solving and 20% consuming content.
+## Cybersecurity Tools and Programming Languages
 
