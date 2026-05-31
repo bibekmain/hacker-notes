@@ -450,6 +450,62 @@ When faced with a difficult decision, it's best to think about the consequences 
 **Sensitive personally identifiable information (SPII):** A specific type of PII that falls under stricter handling guidelines
 
 
--- note: I have realized that these notes I am writing are merely a transcription of the content on coursera. I will attempt to make a change in how I write my notes from now on, trying to "embrace chaos", all the while ensuring a buffer before I write down anything. For instance I will not be writing a note while looking at a sentence as that just leads to me copying. I will read or listen to a concept, think about it for a good while to formulate what it means in my mind, then take notes. Writing a word for word textbook is not a good way to take notes as rereading it will be boring and inefficient. I need to spend 80% of my time thinking and problem solving and 20% consuming content.
+-- note: I have realized that these notes I am writing are merely a transcription of the content on Coursera. I will attempt to make a change in how I write my notes from now on, trying to "embrace chaos", all the while ensuring a buffer before I write down anything. For instance I will not be writing a note while looking at a sentence as that just leads to me copying. I will read or listen to a concept, think about it for a good while to formulate what it means in my mind, then take notes. Writing a word for word textbook is not a good way to take notes as rereading it will be boring and inefficient. I need to spend the majority (80%) of my time thinking and problem solving and proportionately less time (20%) consuming content.
 ## Cybersecurity Tools and Programming Languages
+### Toolkit
+A **log** is a record of events that have happened. Logs exist in many levels of abstraction from logins, errors in a program, company actions, ...
+
+#### SIEM: Security Information and Event Management tool
+collects and logs real time important data, critical activities in an org
+helps identify potential breaches
+provides alerts for specific risks and threats, reducing the amount of data a security analyst needs to sift through.
+Can be hosted locally or on the cloud. Latter is easier -- but could come with other issues.
+
+Splunk by Splunk Enterprise
+Chronical by Google
+#### Network Protocol Analyzer (packet sniffer)
+capture and analyze data within a network
+e.g. tcp dump, wireshark
+#### Playbook
+Organization's manual on how to handle security incidents before, during, and after.
+##### Chain of custody playbook
+A chain of custody playbook is used as a framework to keep track of who, what, when, where, and why evidence has been collected. It is important to document when evidence exchanges hands and that all parties are rightfully in the know of this information. Evidence must be kept safe and tracked.
+##### Protecting and preserving evidence playbook
+If evidence is not properly stored and processed (e.g. volatile data that could be erased if the server suddenly powers off, say data in active memory) it has a chance of not being valid in an investigation. This playbook is a framework to ensure evidence like volatile data is copied and stored properly in a way that it can't be corrupted or messed with.
+
+[Google Threat Horizon Report - provides intelligence for current and potential future security risks related to cloud products](https://services.google.com/fh/files/blogs/gcat_threathorizons_full_sept2022.pdf)
+[CISA resource for free cyber security services and tools](https://www.cisa.gov/resources-tools/resources/no-cost-cybersecurity-services-and-tools)
+
+#### Linux, SQL, and Python
+Common use of **Linux** is examining logs to find out whats going on in a system.
+**SQL**: Structured Query Language used to create, interact with, and request information from a database.
+**Database**: organized collection of information or data.
+**Python**: used for automation and scripting among many other things
+#### Web Vulnerability
+is a flaw in a website or web server that can be used to execute malicious code on said website or server. These could cause unauthorized access, data theft, and/or malware deployment.
+Up to date information on web vulnerabilities:
+[Open Web Application Security Project (OWASP) Top 10](https://owasp.org/www-project-top-ten/)
+#### Antivirus software
+used to prevent, detect, and eliminate malware and viruses. AKA anti-malware. Can scan the memory and storage of a device to look for patterns and behaviors usually conducted by malware.
+#### Intrusion detection system (IDS)
+Analyzes system activities and alerts possible threats or intrusions. Scans network packets to identify potential threats to sensitive data. Can also potentially detect and flag theft and unauthorized access.
+#### Encryption
+The process of altering data to hide it's contents across the web or for safe keeping with the intent to decrypt once the data is needed. Converts plaintext to ciphertext.
+Encoding is converting data to a different format to allow programs to read it better or to obscure the data however it isn't the same as encryption and can be easily converted to original plaintext. e.g. base64, base2, base16 encoding.
+#### Penetration testing
+A simulated attack with permission on an organization's systems to analyze the organization's potential internal and external threats as well as weaknesses.
+
+The more tools you know, the more valuable you are to an organization. Tools help security analysts complete their work more efficiently and effectively.
+
+#### Portfolio
+Upcoming projects for portfolio
+- Drafting a professional statement
+- Conducting a security audit
+- Analyzing network structure and security
+- Using Linux commands to manage file permissions
+- Applying filters to SQL queries
+- Identifying vulnerabilities for a small business
+- Documenting incidents with an incident handler’s journal 
+- Importing and parsing a text file in a security-related scenario
+- Creating or revising a resume
 

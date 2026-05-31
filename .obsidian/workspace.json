@@ -6,7 +6,7 @@
       {
         "id": "a5779a26a12490eb",
         "type": "tabs",
-        "dimension": 57.22222222222222,
+        "dimension": 57.222222222222214,
         "children": [
           {
             "id": "cfe98f9e84250ecb",
@@ -28,7 +28,7 @@
       {
         "id": "dc9afa7d7aaadf20",
         "type": "tabs",
-        "dimension": 42.77777777777778,
+        "dimension": 42.777777777777786,
         "children": [
           {
             "id": "2187f20adf8ecadb",
@@ -103,8 +103,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "5db978147be1ec78",
@@ -211,7 +210,11 @@
   },
   "active": "cfe98f9e84250ecb",
   "lastOpenFiles": [
+    "README.md",
     "How to use AI.md",
-    "GoogleCybersecurityCertificate/Course Notes.md"
+    "study techniques.md",
+    "00 Syntax notes 00.md",
+    "GoogleCybersecurityCertificate/Course Notes.md",
+    "audio_waves_for_focus.md"
   ]
 }
