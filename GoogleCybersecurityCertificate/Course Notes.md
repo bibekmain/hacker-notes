@@ -1,4 +1,4 @@
-# Foundations of Cybersecurity
+# 1. Foundations of Cybersecurity
 
 ### What does a Cyber Security Professional do?
 
@@ -9,7 +9,7 @@ Writing code to automate tasks
 
 ### Table of Contents: 
 
-1. [Foundations of Cybersecurity](https://www.coursera.org/learn/foundations-of-cybersecurity/home/week/1) — (current course) Explore the cybersecurity profession, including significant events that led to the development of the cybersecurity field and its continued importance to organizational operations. Learn about entry-level cybersecurity roles and responsibilities. 
+1. [Foundations of Cybersecurity](https://www.coursera.org/learn/foundations-of-cybersecurity/home/week/1) — Explore the cybersecurity profession, including significant events that led to the development of the cybersecurity field and its continued importance to organizational operations. Learn about entry-level cybersecurity roles and responsibilities. 
     
 2. [Play It Safe: Manage Security Risks](https://www.coursera.org/learn/manage-security-risks/home/week/1) — Identify how cybersecurity professionals use frameworks and controls to protect business operations, and explore common cybersecurity tools.
     
@@ -255,7 +255,8 @@ Threat actors are defined by their malicious intent. Hackers are defined by thei
 
 **Business Email Compromise (BEC):** A type of phishing attack where a threat actor impersonates a known source to obtain financial advantage
 
-**CISSP:** Certified Information Systems Security Professional is a globally recognized and highly sought-after information security certification, awarded by the International Information Systems Security Certification Consortium
+#### CISSP
+Certified Information Systems Security Professional is a globally recognized and highly sought-after information security certification, awarded by the International Information Systems Security Certification Consortium
 
 **Computer virus:** Malicious code written to interfere with computer operations and cause damage to data and software
 
@@ -480,7 +481,7 @@ If evidence is not properly stored and processed (e.g. volatile data that could 
 Common use of **Linux** is examining logs to find out whats going on in a system.
 **SQL**: Structured Query Language used to create, interact with, and request information from a database.
 **Database**: organized collection of information or data.
-**Python**: used for automation and scripting among many other things
+**Python**: used for automation and scripting among many other things, makes static data more accurate
 #### Web Vulnerability
 is a flaw in a website or web server that can be used to execute malicious code on said website or server. These could cause unauthorized access, data theft, and/or malware deployment.
 Up to date information on web vulnerabilities:
@@ -509,3 +510,151 @@ Upcoming projects for portfolio
 - Importing and parsing a text file in a security-related scenario
 - Creating or revising a resume
 
+### **Terms and definitions from Course 1, Module 4**
+
+**Antivirus software:** A software program used to prevent, detect, and eliminate malware and viruses
+
+**Database:** An organized collection of information or data
+
+**Data point:** A specific piece of information
+
+**Intrusion detection system (IDS):** An application that monitors system activity and alerts on possible intrusions
+
+**Linux:** An open-source operating system
+
+**Log:** A record of events that occur within an organization’s systems 
+
+**Network protocol analyzer (packet sniffer):** A tool designed to capture and analyze data traffic within a network
+
+**Order of volatility:** A sequence outlining the order of data that must be preserved from first to last
+
+**Programming:** A process that can be used to create a specific set of instructions for a computer to execute tasks
+
+**Protecting and preserving evidence:** The process of properly working with fragile and volatile digital evidence
+
+**Security information and event management (SIEM)**: An application that collects and analyzes log data to monitor critical activities in an organization
+
+**SQL (Structured Query Language):** A query language used to create, interact with, and request information from a database
+#### [Course 1 Glossary](https://docs.google.com/document/d/1bBtBHYrrm4kmWJqJVmeNUDPG24ydGvc4ACMLoP9zzps/template/preview?pli=1&resourcekey=0-0uttQ9n9hmekaJBuPVjWMg "Course 1 glossary")
+
+# 2. Manage Security Risks
+recall
+### CISSP Security Domains
+#### Security and Risk Management
+I see this as the business portion of security in an organization. This domain has to do with ensuring internal standards and external regulations from relevant jurisdictions are compliant. --missed:  risk mitigation processes, business continuity plans, professional and organizational ethics, infosec: incident response, vulnerability management, app security, cloud security, infrastructure security (energy?)
+#### Asset Security
+Asset security means making sure physical and digital assets are properly secured and disposed of when needed. Assets are valuable entities/information in an organization that have potentially confidential information such as PII. If assets aren't secured properly, it can cause a leak/breach in the organization opening the organization to scrutiny and liability.      --missed: none
+#### Security Architecture and Engineering
+This domain is about ensuring that securing measures and frameworks are already in place. If there are no measures actively present, an organization can be vulnerable in countless ways. Making sure the right tools and resources are available when needed.
+	**Shared responsibility**:
+	The idea that all security professionals involved in securing an organization's operations do their part in the process to secure the organization as a whole.
+--missed: **security principles**: know your threat model, least privilege, consider human factors, security is economics, detect if you can't prevent, Defense in depth, separation of responsibility, ensure complete mediation (race conditions), Shannon's Maxim(assume attackers know the system), use fail-safe defaults, security from the start, Trusted Computing Base. -- sourced from my COMPSCI 161 class UCB
+#### Communication and Network Security
+A lot of data and information travels across networks be it local or external. This domain focuses on securing these communication channels and looking for any possible threats using patterns. This might include using specific secure ways to communicate and contact between employees, store data, access the internet from inside and outside organization...
+#### Identity and Access Management
+This domain is about who has access to what. This includes checking in with an id badge before entering a building containing sensitive information, which employees have access to which files, who gets administrator privileges and how to track who is making changes using said privilege. Essentially, an organization should be extremely conservative when it comes to privilege access. Not everyone needs access to everything and would only cause more points of failure. (principle of least privilege)
+#### Security Assessment and Testing
+This domain consists of conducting audits and assessments to ensure the security of an organization doesn't have any points of failure and also abide by jurisdictional regulations. Penetration testing. Attack team. --missed: the point is to monitor and decrease the probability of potential attacks, ex. auditing user permissions to make sure no one has permissions they don't need.
+#### Security Operations
+This domain refers to the day to day and proactive operations led by security teams. This includes implementing tools to track and flag suspicious behavior as well as investigating and acting on active or passive threats. --missed: training and awareness, reporting and documentation, intrusion detection and prevention, using tools like SIEMs or packet sniffers/network protocol analyzers, log management, incident management, playbooks, post-breach forensics, reflection. Once a threat is identified, an organization doesn't the best it can to protect itself from the threat.
+#### Software Development Security
+This domain is more focused on engineers who create software and applications. "I don't think about security, it lives rent free in my head." It is important to have a security mindset when creating applications that will be used by other developers, employees of the organization, or clients. Programming languages are great tools but implementation certainly matters. A bad implementation can cause points of failure in an organization that can cost a lot of money to repair. --missed: Security cannot be an afterthought, having pen-testers to test the application for vulnerabilities, ensuring proper encryption/encoding.
+OWASP
+
+### Threats Risks and Vulnerabilities
+#### **Threats**
+any circumstance or event that can negatively impact an org's assets
+- social engineering
+#### **Risks**
+anything that can impact the CIA triad of an asset. The likelihood of a threat occuring.
+- lack of backup protocols
+- different levels of risk: low, medium, high
+	- low risk asset: information that would not cause damage to organization like publicly available information say on the org's website
+	- medium risk asset: information protected by laws and regulations that may cause moderate damage to org like a quarterly earnings leak
+	- high risk asset: information protected by laws and regulations that would result in severe damage to org's finances, operations, or reputation like SPII, IP leaks
+##### Common strategies used to manage risks include:
+- **Acceptance**: Accepting a risk to avoid disrupting business continuity
+- **Avoidance**: Creating a plan to avoid the risk altogether
+- **Transference**: Transferring risk to a third party to manage
+- **Mitigation**: Lessening the impact of a known risk
+#### **Vulnerability**
+a weakness that can be exploited by a threat. For a risk to exist, both a vulnerability and a threat need to be present. like outdated firewall, software, apps, weak passwords, unprotected confidential data, people:employees, external vendor, client.
+##### **Modern day vulnerabilities**:
+- **ProxyLogon:** A pre-authenticated vulnerability that affects the Microsoft Exchange server. This means a threat actor can complete a user authentication process to deploy malicious code from a remote location.
+- **ZeroLogon:** A vulnerability in Microsoft’s Netlogon authentication protocol. An authentication protocol is a way to verify a person's identity. Netlogon is a service that ensures a user’s identity before allowing access to a website's location.
+- **Log4Shell:** Allows attackers to run Java code on someone else’s computer or leak sensitive information. It does this by enabling a remote attacker to take control of devices connected to the internet and run malicious code.
+- **PetitPotam:** Affects Windows New Technology Local Area Network (LAN) Manager (NTLM). It is a theft technique that allows a LAN-based attacker to initiate an authentication request.
+- **Security logging and monitoring failures:** Insufficient logging and monitoring capabilities that result in attackers exploiting vulnerabilities without the organization knowing it
+- **Server-side request forgery:** Allows attackers to manipulate a server-side application into accessing and updating backend resources. It can also allow threat actors to steal data.
+#### Key impacts of Threats, Risks, and Vulnerabilities
+- financial
+- identity theft
+- reputation
+#### The World Wide Web
+- Surface Web
+	- layer used my most people, contains content accessed using web browser, normal web.
+- Deep Web
+	- can only be accessed by authorized users, servers, cloud, ...
+- Dark Web
+	- can only be accessed using special software. Negative connotation cause of criminality.
+
+#### NIST Risk Management Framework (RMF)
+7 steps for managing and mitigating risk
+- Prepare
+	- Activities necessary to manage security risks before a breach occurs
+	- Updated playbooks, systems, networks
+	- SIEM analyzers, pen testing, ...
+- Categorize
+	- Used to develop risk management processes and tasks
+	- Figure out what events are red flags and what events arent
+	- SIEM
+- Select
+	- To choose, customize, and capture documentation of the controls that protect an organization
+	- Keeping a playbook up to date, managing documentation for efficiency
+- Implement
+	- implement security and privacy plans for org
+	- new issues might arise, take into account the human factor
+- Assess
+	- determine if established controls are implemented correctly
+	- analyze if protocols and procedures are meeting org needs
+- Authorize
+	- being accountable for security and privacy risks that may exist in an org
+	- generating reports, developing plans of action, establishing milestones for projects
+- Monitor
+	- be aware of how systems are operating
+
+[NIST National Vulnerability Database](https://nvd.nist.gov/vuln) and [CISA Known Exploited Vulnerabilities Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
+[OWASP Top Ten](https://owasp.org/www-project-top-ten/) and  [NIST RMF](https://csrc.nist.gov/projects/risk-management/about-rmf)
+
+### Security Frameworks and Controls
+Frameworks, Controls, Design Principles, Security audits
+NIST Cybersecurity Framework
+
+**Frameworks** are guidelines used as building blocks for creating plans to mitigate risks and threats
+**Controls** mitigate specific risks
+
+**Encryption** used for confidentiality of sensitive data.
+**Authentication** is verifying who someone or something is. username password, MFA, bio metrics...
+**Authorization** is verifying that someone has permission to access a resource.
+
+### CIA Triad
+A security model used to set up security policies and systems as needed.
+**Confidentiality**: the idea that information is only available to authorized individuals
+**Integrity**: data needs to be correct, authentic, and reliable
+**Availability**: data needs to be freely available to authorized individuals
+
+**Security Posture**: the ability of an organization to react to changes in it's security
+
+### NIST CSF
+National Institute of Standards and Technology Cybersecurity Framework
+Their framework supports ongoing security efforts of many kinds of organizations.
+6 Main functions that guide specific guidance to handle an issue appropriately and quickly:
+- Govern
+- Identify
+- Protect
+- Detect
+- Respond
+- Recover
+
+NIST S.P. 800-53
+A framework for protecting security of information systems within the federal government.

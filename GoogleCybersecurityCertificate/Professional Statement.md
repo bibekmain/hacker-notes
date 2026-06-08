@@ -1,3 +1,4 @@
+https://docs.google.com/document/d/12fvZXSrCHs2cE9GUNkc0ypfCb77QdKVFnofQ4aBuxFU/template/preview
 **2-3 strengths I currently have**
 I am a critical thinker although I might not be the thinker per say but only the experience. I like to look at problems from many different angles to identify what the problem really is. I don't tend to jump to conclusions however it's important to identify potential things that could have happened and use that as a basis to rule out duds in that process.
 
@@ -23,3 +24,7 @@ Really anyone. From a more personal and immediate lens the target audience is re
 3. In what ways can my strengths, values, and interest in cybersecurity support the
 security goals of various organizations?
 --
+
+
+
+https://docs.google.com/document/d/1uodGPtGAS247wACdtJ7ITe3BcwFL993sQy5P9_pAj48/template/preview
