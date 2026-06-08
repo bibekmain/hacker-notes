@@ -637,7 +637,7 @@ NIST Cybersecurity Framework
 **Authentication** is verifying who someone or something is. username password, MFA, bio metrics...
 **Authorization** is verifying that someone has permission to access a resource.
 
-### CIA Triad
+#### CIA Triad
 A security model used to set up security policies and systems as needed.
 **Confidentiality**: the idea that information is only available to authorized individuals
 **Integrity**: data needs to be correct, authentic, and reliable
@@ -645,7 +645,7 @@ A security model used to set up security policies and systems as needed.
 
 **Security Posture**: the ability of an organization to react to changes in it's security
 
-### NIST CSF
+#### NIST CSF
 National Institute of Standards and Technology Cybersecurity Framework
 Their framework supports ongoing security efforts of many kinds of organizations.
 6 Main functions that guide specific guidance to handle an issue appropriately and quickly:
@@ -658,3 +658,40 @@ Their framework supports ongoing security efforts of many kinds of organizations
 
 NIST S.P. 800-53
 A framework for protecting security of information systems within the federal government.
+
+## Cybersecurity Tools
+The industry uses all kinds of tools to assess and react to changing security metrics like attack vectors, risk exposure, time to detect, time to respond, patch time, ... **Metrics** are imperial attributes that help an organization optimize their security needs.
+#### Logs
+Logs are recorded information in a company's networks, firewall, login, servers, infrastructure. They can be overwhelming and far apart so a centralized program that allows cross reference analysis to understand the details of a security incident occurring. Introducing: the SIEM tool
+
+#### Security Information and Event Manager (SIEM)
+A SIEM centralizes data across an organization in an easy to read and manipulate dashboard for a security team to have access to potential threats and ongoing threats. There are 2 main types: self-hosted and cloud-hosted (proprietary). Cloud hosted can leverage cloud tools and processing power for fast calculations and predictions. AI is also a factor now a days. There is also hybrid for a mix of both. Self-hosting might cost a lot to develop and run but if company big enough its good. Many large companies use enterprise level proprietary clients like Splunk, Google Chronicle, ...
+#### Open Source
+Open source is a community of developers far and wide that come together to make tools for other developers and really anyone to use as long as the licensing requirements are met. Increased security compared to proprietary software because such a large and credible people are involved so when a security issue occurs, it is patched quickly with a large often global group effort.
+##### Linux
+The operating system template created by Linus Torvalds as a competitor to proprietary operating systems like Windows and Mac OS. Used by most servers and all supercomputers in the world. Absolute bombastic open source project that has branched out into a massive industry for many different use cases.
+***I USE ARCH BTW***
+### Playbooks
+a manual that provides details about any operational action
+clarify what tools should be used in response to a security incident
+urgency, efficiency, accuracy
+ensures people follow a consistent list of actions in a precise way
+e.g. **incident response**, security alerts, team-specific & product specific
+#### Phases of Incident Response
+identify an attack, contain damage, correct the effects of a breach
+1. Preparation
+	Before any security incident occurs, a security team needs to have preparations in place to efficiently and accurately respond to threats. This includes having industry standard tools up and running, staffing choices for delegation and responsibilities, and well written documentation of past incidents and how to react to threats.
+2. Detection & Analysis
+	Detection involves looking for security threats and risks using tools like logs and SIEMs and analysis is further investigation into potential threats to determine if it is a false alarm or an active threat.
+3. Containment
+	After a threat has been classified and authenticated, it is the security team's job to contain the damage caused and potentially will cause by the threat. This may include blocking a device from making any more login attempts, blocking an IP address where threats are originating from, or even just resetting an insecure/compromised password and logging out of all devices for that account. The idea is to make sure no further damage can happen.
+4. Eradication & Recovery
+	Eradication means to remove all threat artifacts related to the incident and recovery refers to business continuity, bringing any affected systems back online in a correct and safe way.
+5. Post incident activity
+	This step involves writing documentation and reports on what happened and how the incident was handled or wasn't able to be handled. This is an important step to update the working playbook for relative incidents to be better prepared the next time around. This step also involves communicating with organization leaders about the impact caused by the incident if applicable.
+6. Coordination
+	This is the compliance step. It is important and required that the organization contact jurisdictional authorities of the incident giving detailed reports. This is not only good for the company's well being but also for better preparation in the industry as a whole.
+
+
+Link to glossary: [Course 2 glossary](https://docs.google.com/document/d/1wvEvTZeN2iOg_Cil52pe9WRsLZyhK9U0gKcztftrzRE/template/preview?usp=sharing&resourcekey=0-BPIcdyJSYeqNxaQ3l1qAAA "Course 2 glossary")
+# Network Security

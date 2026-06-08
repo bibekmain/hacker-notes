@@ -7,6 +7,7 @@ Links to supporting materials: 
 - [Control categories](https://docs.google.com/document/d/1HsIw5HNDbRXzW7pmhPLsK06B7HF-KMifENO_TlccbSU/template/preview)
 Link to template: [Controls and compliance checklist](https://docs.google.com/document/d/10NoXfyE3ZSiHFqiTE0fINL3xdPvTZq0j0VwnFEM0N3g/template/preview#heading=h.87tykp1u0l36)
 ****
+[My copy of the template](https://docs.google.com/document/d/1oUJaK61czV_DsN6vTbwt7ldVmZ6chqWjStik2Bh6qDo/edit?usp=sharing)
 ### Notes
 Scope: the entire security program at Botium Toys including assets such as employee equipment and devices, internal networks, and systems.
 
