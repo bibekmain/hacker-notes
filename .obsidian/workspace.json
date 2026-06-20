@@ -27,7 +27,7 @@
       {
         "id": "a5ac8e26839e7889",
         "type": "tabs",
-        "dimension": 29.78227060653188,
+        "dimension": 29.782270606531885,
         "children": [
           {
             "id": "2187f20adf8ecadb",
@@ -208,8 +208,10 @@
   },
   "active": "ddaa4b56a07157d0",
   "lastOpenFiles": [
-    "GoogleCybersecurityCertificate/Security Audit of Botium Toys.md",
+    "Books/HackingandSecurityBook/README.md",
     "GoogleCybersecurityCertificate/Course Notes.md",
+    "Books",
+    "GoogleCybersecurityCertificate/Security Audit of Botium Toys.md",
     "GoogleCybersecurityCertificate/Professional Statement.md",
     "GoogleCybersecurityCertificate/certs/1Foundations.pdf",
     "GoogleCybersecurityCertificate/certs",

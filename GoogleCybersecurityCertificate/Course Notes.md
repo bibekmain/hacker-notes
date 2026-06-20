@@ -694,4 +694,234 @@ identify an attack, contain damage, correct the effects of a breach
 
 
 Link to glossary: [Course 2 glossary](https://docs.google.com/document/d/1wvEvTZeN2iOg_Cil52pe9WRsLZyhK9U0gKcztftrzRE/template/preview?usp=sharing&resourcekey=0-BPIcdyJSYeqNxaQ3l1qAAA "Course 2 glossary")
-# Network Security
+# 3. Network Security
+## Network Architecture
+network structure, networking tools, cloud networks, TCP/IP model
+
+**What is a network?**
+The underlying infrastructure that allows connected devices to talk with each other and other devices across the internet.
+**LAN**: Local Area Network: spans a small area like a home, office space, facility
+**WAN**: Wide Area Network: spans a wide area, the internet as a whole can be considered
+Network systems should be safe and resilient.
+**Offensive Security**: simulate adversaries and threats to assess security. Knowing how the components and systems work under the hood and using tools like cli, log parsing, network analysis.
+Take on many hats, technical and soft. Take things apart, feel uncomfortable, find opportunities to learn and understand how things work.
+
+### Network Tools
+#### Network Devices
+specialized vehicles for directing information/data
+**Hub** is a network device that broadcasts information to every device on a network. It broadcasts to all ports on all devices so there is fear of eavesdropping but encryption, really used for small local networks not large industrial/commercial.
+**Switch** makes connections between specific devices by sending and receiving data from them, more intelligent than hub, only passes data to intended destination, used commercially, improve performance and security, data travels quickly and only to devices connected.
+**Router** directs traffic to devices on a network, including other routers for interconnected networks, can allow a firewall feature, uses the destination address of packets (IP header) to send the packet to the next stop.
+**Modem** connects the router to the internet through the ISP, connects the WAN to LAN, 
+**Wireless Access Point** sends and receives data packets over radio in a wireless network, devices connect using WiFi 
+**Virtualization Tool** is a virtual tool that mimics what physical devices do.
+**Firewall** monitors incoming and outgoing traffic for security, an organization configures firewall to block and accept specific network traffic, first line of defense, positioned in between an organization's assets and an unknown/untrusted source like the internet.
+**Personal/other devices on a network** each have a unique MAC/IP address to identify and locate it in a network, e.g. desktops, workstation, phone, laptop, printer, smart devices, IOT, ...
+**Server** offers information or services to clients/devices connected to it, the client requests info or service, server does internal processing like fetch from a database e.g. DNS server
+
+
+typical trace:
+sender device -> sender router -> sender firewall -> sender modem -> **internet** -> recipient modem -> recipient firewall -> recipient router -> recipient device
+
+A **network diagram** is a map that shows devices in a network and how they connect, used to develop strategies and get a bird's eye view of a network for troubleshooting and securing network issues.
+#### Cloud Computing
+The cloud allows for virtualized network devices to route network traffic to where it needs to be. It also allows for many different services: SaaS, PaaS, DaaS.  This includes cloud storage devices, networking, api endpoints, web hosting, ...
+
+### Network Communication
+**Data packet** is a basic unit of information traveling across a network, header: ip address, mac address, protocol #, body: message being transmitted: cyphertext/plaintext, footer: signature
+**Bandwidth** is the amount of data received per second, calculated by dividing amount of data received by a unit of time elapsed, rated speed?
+**Speed** is the rate at which data packets are received or downloaded. Think of bandwidth as the rated speed, and speed as the actual speed
+**Packet Sniffing** is the practice of capturing data traveling across a network for analysis
+
+
+#### Transmission Control Protocol/Internet Protocol TCP/IP Model
+##### TCP
+An internet communication protocol that allows two devices on a network to communicate with each other/form a connection.
+
+##### IP
+A set of standards used to route and address data packets as they travel between network devices.
+
+**Port** is a digital software based location that organizes sending and receiving data. Different ports are assigned for different methods of communication. Useful for sender and recipient devices to prioritize how requests are processed.
+Data packets have a port number specified so the recipient knows what to do with the packet.
+- Port 25 for email
+- 443 secure internet communication
+- 20 for large file transfer
+- 22 for ssh
+
+##### TCP/IP Four Layers
+- Network Access Layer
+	- creation of data packets and transmission across a network
+	- hardware devices connected by physical cables, switches
+- Internet Layer
+	- IP addresses are attached to packets to indicate location of sender/receiver
+	- How networks connect to each other, LAN or WAN
+- Transport Layer
+	- Protocols to control flow of traffic across a network
+	- permit or deny communication
+	- include info about status of a connection
+- Application Layer
+	- how data packets interact with end point devices
+
+####  OSI Model
+- 7. Application Layer
+- 6. Presentation Layer
+- 5. Session Layer
+- 4. Transport Layer
+- 3. Network Layer
+- 2. Data Link Layer
+- 1. Physical Layer
+
+##### OSI model vs TCP/IP model
+models that describe how hosts communicate across a network.
+OSI is used more for troubleshooting and TCP/IP for real world workflow/application.
+
+
+## Network Operations
+Network Protocols, Virtual Private Networks (VPNs), Firewalls Security Zones and Proxy Servers
+
+Port numbers are used by network devices to determine what should be done with the data contained in each packet once the recipient receives it. Firewalls filter out unwanted traffic based on port numbers. An organization can configure a firewall to only accept TCP port 995 (POP3) by IP addresses belonging to their organization.
+### Network Protocols
+Rules that dictate how data is sent over a network. Describes order of delivery and structure of the data.
+Some protocols are assigned port numbers by the Internet Assigned Numbers Authority (IANA). These port numbers are included in the description of each protocol, if assigned.
+
+#### Communication Protocols
+**Transmission Control Protocol (TCP)** is a *transport layer* internet communications protocol that allow devices across networks to form a connection and stream data.
+**Handshake** verify the devices being connected, device sends synchronize SYN packet, server sends synchronize acknowledge SYN/ACK packet back to device, and device then sends an ACK packet to server for **TCP 3-way handshake**.
+
+**User Datagram Protocol (UDP)** *transport layer* connectionless protocol that allows for fast data transfer, doesn't need a handshake. Used for DNS queries to local DNS servers.
+
+**Hypertext Transfer Protocol (HTTP)** *application layer* protocol allows communication between clients and web servers. *Port 80* Insecure, replaced by HTTPS, however many websites still use it.
+
+**Domain Name System (DNS)** *application layer* protocol that translates web domain names and web addresses to IP addresses. Uses UDP on port 53, if request is too large will switch to TCP.
+
+**Simple Mail Transfer Protocol (SMTP)** is used to route email from sender device to recipient address. SMTP works with *Message Transfer Agent* software: searches DNS servers to resolve email addresses to IP addresses, to ensure emails reach correct destination. *SMTP uses TCP/UDP port 25 for unencrypted emails and TCP/UDP port 587 using TLS for encrypted emails.* The TCP port 25 is often used by high-volume spam. SMTP helps to filter out spam by regulating how many emails a source can send at a time. 
+#### Management Protocols
+used for monitoring and managing activity on a network, for example to optimize performance or error reporting.
+
+**Simple Network Management Protocol (SNMP)** is an *application layer* network protocol used to monitor and manage devices on a network like reset passwords, change configuration, monitor bandwidth usage.
+
+**Internet Control Message Protocol (ICMP)** is an *internet layer* network protocol for devices to communicate with each other about data transmission errors across a network. Recipient sends an update about what happened to the data. Used to troubleshoot connectivity and latency. ping command on linux uses ICMP.
+
+#### Security Protocols
+**Hyper Text Transfer Protocol Secure (HTTPS)** *application layer* protocol, provides secure (using SSL/TLS) communication between clients and servers. Secure version of HTTP. Port 443.  *so then why not just use TCP?: because https provides encryption on top of HTTP, also TCP is how the data is transferred, HTTP is the format it is in*
+
+**Secure File Transfer Protocol (SFTP)** *application layer* uses a secure shell (SSH) usually through port 22. Uses standard Advanced Encryption Standard (AES) encyption. Used with cloud storage. Upload or download to or from cloud uses SFTP protocol.
+
+--- 
+#### Other Protocols -- subject to classification
+**Address Resolution Protocol (ARP)** is a *network access layer (TCP/IP)* protocol used to determine the MAC address of the next device on the route to destination. Each device keeps track of matching IP and MAC addresses in an ARP cache. No port number because its a layer 2 protocol, only application layer 7 protocols are assigned port numbers.
+
+**Domain Name System** translates internet domain names to IP addresses, when accessing a website the DNS protocol sends the domain name and web address to a DNS server to query the IP address of the domain/website.
+
+**Network Address Translation (NAT)**
+NAT is a part of the *internet layer, layer 2*, a process for private network IPs on a network to share a single public facing IP. Router replaces private IP of sending device with the LAN's public IP when the device wants to send an outgoing message, and vice versa for incoming. This needs to be facilitated with a router or firewall specifically configured for NAT.
+
+| Private IP                                                                                                                 | Public IP                                                                                                                                                                                                                        |
+| -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| assigned by the router                                                                                                     | Assigned by ISP and IANA                                                                                                                                                                                                         |
+| unique only within a private network                                                                                       | Unique address in global internet                                                                                                                                                                                                |
+| no cost to use                                                                                                             | Costs to lease a public IP address                                                                                                                                                                                               |
+| address ranges:<br>    10.0.0.0-10.255.255.255<br><br>    172.16.0.0-172.31.255.255<br><br>    192.168.0.0-192.168.255.255 | Assignable address ranges:<br><br>    1.0.0.0-9.255.255.255<br>    <br>    11.0.0.0-126.255.255.255<br>    <br>    128.0.0.0-172.15.255.255<br>    <br>    172.32.0.0-192.167.255.255<br>    <br>    192.169.0.0-233.255.255.255 |
+**Dynamic Host Configuration Protocol (DHCP)**
+An *application layer* protocol used to configure devices on a network. Works with router to assign a unique IP to each device and provide address and appropriate DNS server and default gateway for each device. DHCP servers operate on UDP PORT 67, Clients on UDP port 68.
+
+**Telnet** is an *application layer* protocol used to connect with a remote system. Works like SSH but not secure as it transmits data in plain text. Uses TCP port 23.
+
+**Secure Shell (SSH)** protocol is used to create a secure remote connection. *application layer* TCP port 22, replacement for Telnet, an alternative for secure authentication and encrypted communication.
+
+**Post Office Protocol (POP)** is an *application layer* protocol used to manage and retrieve email from a mail server. POP3 is most common. User devices request mail they received from a mail server, download locally, could be erased by server so syncing requires further effort. *Unencrypted plaintext authentication uses TCP/UDP port 110 and encrypted emails with SSL/TLS over TCP/UDP port 995.* Can't read mail until fully downloaded.
+ 
+**Internet Message Access Protocol (IMAP)** Used for incoming email, downloads header and content of an email, and keeps content on mail server for viewing on different devices. *Unencrypted IMAP uses TCP Port 143 and Encrypted TLS over TCP Port 993.* Can partially read mail without it being fully downloaded.
+
+| DHCP   | UDP port 67 (servers)<br><br>UDP port 68 (clients)                          |
+| ------ | --------------------------------------------------------------------------- |
+| ARP    | none                                                                        |
+| Telnet | TCP port 23                                                                 |
+| SSH    | TCP port 22                                                                 |
+| POP3   | TCP/UDP port 110 (unencrypted)<br><br>TCP/UDP port 995 (encrypted, SSL/TLS) |
+| IMAP   | TCP port 143 (unencrypted)<br><br>TCP port 993 (encrypted, SSL/TLS)         |
+| SMTP   | TCP/UDP Port 25 (unencrypted)                                               |
+| SMTPS  | TCP/UDP port 587 (encrypted, TLS)                                           |
+
+--- 
+#### Wi-Fi
+
+##### Wireless Equivalent Privacy (WEP)
+An old 1999, outdated way for devices to connect to a wireless network, often used by printers, but is generally no longer used in enterprise because of it's insecurities. It is however good to learn about it because it can show up here and there. For instance, my almost decade old printer has an option for WEP connection. Routers also allow for WEP connections. It's security consisted of static keys which was it's main vulnerability.
+##### Wi-Fi Protected Access (WPA)
+WPA was created 2003 in response to the lack of security offered by WEP with backwards compatibility with older hardware. Eventually the original WPA became vulnerable through the use of KRACK to reassign the encryption key instead of the dynamically created ones using TKIP. 
+##### Temporal Key Integrity Protocol (TKIP)
+Used in WPA for a more robust encryption compared to WEP. Generates a new temporary key for each new data packet and included a message integrity check to check for packet tampering, and block when tamper is detected. 
+##### WPA2
+Improves on WPA by using **Advanced Encryption Standard (AES)**, improves on usage of TKIP, Uses Counter Mode Cipher Block Chaining (CCMP) over AES which ensures message authentication and integrity. It is Vulnerable to KRACK attacks however it is considered the security standard for all Wi-Fi transmissions today. WPA3 was created to protect against KRACK.
+###### Personal
+Works best for home networks, easy to implement, global passphrase for WPA2 personal needs to be applied to each device and access point on a network also known as the Pre Shared Key (PSK)
+###### Enterprise
+Works best for business applications, more complicated to setup than personal, offers individualized and centralized controls over Wi-Fi to an org's network. Users don't have access to encryption keys, which prevents attackers from retrieving them from individual devices.
+##### Key Re-installation Attack (KRACK)
+A major vulnerability in WPA and WPA2, allows attackers within a physical range to intercept and decrypt network communication. The vulnerability is in the 3rd step of the 4 way handshake created by WPA to connect a device. If a device fails to respond, a KRACK attack forces the device to reinstall the same encryption key each time.
+For more: https://www.krackattacks.com/, airng?
+##### WPA3
+Resolves the KRACK vulnerability in WPA and WPA2, uses Simultaneous Authentication of Equals (SAE) which is a password authenticated key, cipher key-sharing agreement which prevents attackers from analyzing data from wireless network connections. Also uses a more robust 128-bit encryption with enterprise offering 192-bit. Also have 2 modes: personal & enterprise.
+
+## System Identification
+
+### Firewalls
+A firewall is a physical or virtual device that monitors and filters network traffic. Allows or denies traffic based on a set of security rules, say based on ports or sender IPs. 
+#### Physical
+A physical firewall is a physical device that sits between networks. Inspects each data packet before entering network.
+#### Software
+Performs same function as physical but on the device level rather than network like computers and servers. Costs less but adds processing burden on device.
+##### Cloud-based Firewall
+Software firewall hosted by a cloud service provider: Firewall as a Service (Faas)
+#### Stateful
+Keeps track of information passing through it and filters out threats. Discovers trends.
+#### Stateless
+Filters based on pre-defined rules and does not keep track of data packets that pass. Doesn't discover trends. Less secure than stateful.
+#### Next Generation Firewall (NGFW)
+More security than stateful: deep packet inspection, intrusion protection, threat intelligence, cloud service connections, to be prepared for new vulnerabilities asap.
+### Virtual Private Networks (VPNs)
+Internet requests generally include usually private information about sender like IP and other metadata. If traffic gets intercepted, someone can identify the sender device by piecing together. VPNs change a sender's public IP address and location, acting as a middle man between the internet and your ISP. They also include encryption and encapsulation of data so a sniffer can't see what you are sending.
+#### Encapsulation
+Performed by VPN service: wraps sensitive data alongside other data to make it more difficult to make out the sensitive data. *security by obscurity? Shannon's maxim*
+*Its not security by obscurity.* So your VPN app encrypts the entire data packet, including sender information and metadata, then encapsulates that data packet in another data packet to first route it to the VPN server. Then when VPN server recieves the encapsulated data packet, it decapsulates it, decrypts it, then is able to read who the sender and recipient of the network communication is and performs the communication on behalf of the VPN client.
+#### Remote Access VPN
+Individual users connect using their network to a vpn server to hide their IP address. Connection is established through the internet.
+#### Site-to-Site VPN
+Enterprises use this to extend their network to other networks. IPSec is commonly used in site-to-site VPNs to create an encrypted tunnel between a primary network and the remote network. Difficult to setup and manage compared to remote access.
+#### WireGuard VPN Protocol
+high speed, advanced encryption, protects users while accessing internet, simple to setup and maintain, open source, fast speeds, relatively newer and cleaner, both remote and site-to-site connections.
+#### IPSec VPN Protocol
+Older so legacy devices support this, more complex, extensive security testing, widespread adoption, less performance because more lines of code, only for site-to-site connections.
+#### VPN Tunnel
+A private, encrypted connection that securely routes internet traffic to and from a VPN server.
+### Security Zone
+A network segment that is part of a layer that protects an internal secure network. Controls who can access specific parts of a network. Prevents threats from spreading throughout a network.
+#### Network Segmentation
+Dividing networks into segments that have their own firewalls, access permissions, ...
+#### Sub Networks (subnetting)
+Splitting up one large network into multiple, smaller, organized ones. These subnets are defined by a combo of *IP addresses* and *network mask*. Not necessarily using multiple routers but by using CIDR. Allows isolation of different parts of a network, using network segmentation, in case one part is contaminated. No need to request additional IPs from ISP. Subnetting is a component of creating isolated subnetworks aka Security Zones through physical isolation, routing configuration, and firewalls.
+##### Classless Inter-Domain Routing notation for subnetting (CIDR)
+A flexible addressing method used for modern subnetting. A method that assigns subnet masks to IP addresses to create a subnet. Replaces Classful Addressing used in 1980 but outdated because of the increase in internet devices.
+CIDR IP addresses are formatted like IPv4 addresses following a `/` followed by a number called the IP Network Prefix. 
+#### Uncontrolled Zone
+Any network outside an organization's control like the internet.
+#### Controlled Zone
+A subnet that protects the internal network from the uncontrolled zone. There are several kinds of networks in a controlled zone. These controlled zones are all separated by a firewall with their own necessary set of restrictions for network traffic.
+##### Demilitarized Zone (DMZ)
+Public facing services that can access the internet. Web servers, proxy servers, DNS servers, Email/File servers. It is the network perimeter to the internal network.
+##### Internal Network
+The main network that is supposed to be secure.
+##### Restricted Zone
+Protects highly confidential information, only accessible to those with the right credentials.
+
+### Proxy Servers
+A server that fulfills the requests of a client by forwarding them on to other servers. Hides the private network's IP address from malicious actors. A VPN is a specialized proxy server.
+Can be used to block unsafe websites. 
+
+#### Forward Proxy Server
+Regulates and restricts a person's access to the internet. Hide a user's IP address. Forward requests to the destination.
+#### Reverse Proxy Server
+Regulates and restricts a the internet's access to an internal server. Accept traffic from external parties, approve it, and forward it to internal servers. Useful to hide a server's internal IP address.
+#### Email Proxy Server
+Filters spam email by verifying whether a sender's address is forged.
