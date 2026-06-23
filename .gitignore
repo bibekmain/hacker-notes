@@ -1,0 +1,3 @@
+# files that git should ignore
+# maybe .obsidian if I don't want to sync Obsidian settings over to each instance of this repo
+
