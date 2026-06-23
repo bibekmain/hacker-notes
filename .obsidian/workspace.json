@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GoogleCybersecurityCertificate/Course Notes.md",
+                "file": "GoogleCybersecurityCertificate/tcpdump analysis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Course Notes"
+              "title": "tcpdump analysis"
             }
           }
         ]
@@ -35,13 +35,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GoogleCybersecurityCertificate/Course Notes.md",
+                "file": "GoogleCybersecurityCertificate/tcpdump analysis.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Course Notes"
+              "title": "Outline of tcpdump analysis"
             }
           }
         ]
@@ -206,10 +206,14 @@
       "bases:Create new base": false
     }
   },
-  "active": "ddaa4b56a07157d0",
+  "active": "aba5b9e99d5867f2",
   "lastOpenFiles": [
-    "Books/HackingandSecurityBook/README.md",
+    "GoogleCybersecurityCertificate/certs/2ManageRisks.pdf",
+    "Pasted image 20260622125101.png",
     "GoogleCybersecurityCertificate/Course Notes.md",
+    "GoogleCybersecurityCertificate/tcpdump analysis.md",
+    "GoogleCybersecurityCertificate/templates",
+    "Books/HackingandSecurityBook/README.md",
     "Books",
     "GoogleCybersecurityCertificate/Security Audit of Botium Toys.md",
     "GoogleCybersecurityCertificate/Professional Statement.md",

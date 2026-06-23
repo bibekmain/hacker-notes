@@ -925,3 +925,31 @@ Regulates and restricts a person's access to the internet. Hide a user's IP addr
 Regulates and restricts a the internet's access to an internal server. Accept traffic from external parties, approve it, and forward it to internal servers. Useful to hide a server's internal IP address.
 #### Email Proxy Server
 Filters spam email by verifying whether a sender's address is forged.
+
+## Securing Networks
+
+### Network Attacks
+**Denial of Service (DoS)** attack is when a server or network is overloaded with more requests than available ports to act on said requests slowing down the network bandwidth to a crawl. Any part of the network can be flooded.
+**Distributed Denial of Service (DDoS)** is the same as DoS but is done using many different devices across different networks, for example with the use of a bot net.
+- **SYN (synchronization) flood attack** simulates a TCP communication to flood the target with SYN packets, more so than the recipient device can handle at a time. TCP handshake: send(SYN), rec(SYN/ACK), send(ACK). After the first SYN packet sent and received by a server, the server leaves a port open to send a SYN/ACK and receive an ACK. If too many SYN packets flood a server, it will run out of ports quickly.
+- **ICMP (Internet Control Message Protocol) flood attack** repeatedly sends ICMP packets to a server taking up ports.
+- **Ping of Death attack** is when an attacker sends an oversized ICMP packet, bigger than 64KB, max size for correctly formed ICMP packet. This can overload a system.
+
+
+### Tools
+
+#### tcpdump
+A light weight, unix text based, network protocol analyzer (a.k.a. packet sniffer) that displays key information about each packet in the terminal, including ...
+- **Timestamp**: The output begins with the timestamp, formatted as hours, minutes, seconds, and fractions of a second.  
+- **Source IP**: The packet’s origin is provided by its source IP address.
+- **Source port**: This port number is where the packet originated.
+- **Destination IP**: The destination IP address is where the packet is being transmitted to.
+- **Destination port**: This port number is where the packet is being transmitted to.
+
+Network protocol analyzers (packet sniffers) can be used as a baseline to
+- monitor network traffic patterns and metrics
+- detect and identify malicious traffic
+- create alerts for specific events or when threats arise
+- locate unauthorized traffic, access points, instant messaging
+Packet sniffers can also be used to capture sensitive information by attackers like usernames and passwords if the network is not properly protected.
+
