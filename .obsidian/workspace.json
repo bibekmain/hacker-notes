@@ -4,30 +4,30 @@
     "type": "split",
     "children": [
       {
-        "id": "dc9afa7d7aaadf20",
+        "id": "a5ac8e26839e7889",
         "type": "tabs",
-        "dimension": 70.21772939346812,
+        "dimension": 76.74961119751167,
         "children": [
           {
-            "id": "ddaa4b56a07157d0",
+            "id": "6af98d5db84d46d3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GoogleCybersecurityCertificate/tcpdump analysis.md",
+                "file": "GoogleCybersecurityCertificate/tcpdump wireshark analysis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "tcpdump analysis"
+              "title": "tcpdump wireshark analysis"
             }
           }
         ]
       },
       {
-        "id": "a5ac8e26839e7889",
+        "id": "be7a44bb917847bc",
         "type": "tabs",
-        "dimension": 29.782270606531885,
+        "dimension": 23.250388802488338,
         "children": [
           {
             "id": "2187f20adf8ecadb",
@@ -35,13 +35,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GoogleCybersecurityCertificate/tcpdump analysis.md",
+                "file": "GoogleCybersecurityCertificate/tcpdump wireshark analysis.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of tcpdump analysis"
+              "title": "Outline of tcpdump wireshark analysis"
             }
           }
         ]
@@ -208,10 +208,11 @@
   },
   "active": "aba5b9e99d5867f2",
   "lastOpenFiles": [
+    "GoogleCybersecurityCertificate/Course Notes.md",
+    "GoogleCybersecurityCertificate/tcpdump wireshark analysis.md",
+    "GoogleCybersecurityCertificate/tcpdump analysis.md",
     "GoogleCybersecurityCertificate/certs/2ManageRisks.pdf",
     "Pasted image 20260622125101.png",
-    "GoogleCybersecurityCertificate/Course Notes.md",
-    "GoogleCybersecurityCertificate/tcpdump analysis.md",
     "GoogleCybersecurityCertificate/templates",
     "Books/HackingandSecurityBook/README.md",
     "Books",

@@ -929,15 +929,29 @@ Filters spam email by verifying whether a sender's address is forged.
 ## Securing Networks
 
 ### Network Attacks
-**Denial of Service (DoS)** attack is when a server or network is overloaded with more requests than available ports to act on said requests slowing down the network bandwidth to a crawl. Any part of the network can be flooded.
-**Distributed Denial of Service (DDoS)** is the same as DoS but is done using many different devices across different networks, for example with the use of a bot net.
+#### Denial of Service (DoS)
+attack is when a server or network is overloaded with more requests than available ports to act on said requests slowing down the network bandwidth to a crawl. Any part of the network can be flooded.
+#### Distributed Denial of Service (DDoS)
+is the same as DoS but is done using many different devices across different networks, for example with the use of a bot net.
 - **SYN (synchronization) flood attack** simulates a TCP communication to flood the target with SYN packets, more so than the recipient device can handle at a time. TCP handshake: send(SYN), rec(SYN/ACK), send(ACK). After the first SYN packet sent and received by a server, the server leaves a port open to send a SYN/ACK and receive an ACK. If too many SYN packets flood a server, it will run out of ports quickly.
 - **ICMP (Internet Control Message Protocol) flood attack** repeatedly sends ICMP packets to a server taking up ports.
 - **Ping of Death attack** is when an attacker sends an oversized ICMP packet, bigger than 64KB, max size for correctly formed ICMP packet. This can overload a system.
+#### Malicious Packet Sniffing
+**Passive Packet Sniffing** is when data packets are read in transit. Postal delivery person maliciously reading someone else's mail.
+**Active Packet Sniffing** is when the contents of a packet are changed and re-transmitted. Postal person opening and replacing the document inside a letter.
+**Solution** is to use a VPN. Malicious actors can intercept a packet but won't be able to decode the encryption. Another way is to ensure usage of HTTPS which uses SSL/TLS to encrypt data. Avoid using unprotected WiFi without a VPN.
+#### IP Spoofing
+When an impersonator changes their source IP to one that makes it seem like an authorized IP is sending the request. Pretending to be someone they are not.
+**On-Path-Attack** attacker places themselves in the middle of an authorized connection and intercepts/alters data in transit. Say between web browser and web server.
+**Replay attack** is when an attacker intercepts data packets in transit and delays/repeats it at another time. It can slow down network. An attacker can also repeat an authorized user's data packets to impersonate.
+**Smurf attack** is a mix of DDoS and IP Spoofing. The attacker sniffs an authorized user's IP address and floods it with packets to cripple the target device.
 
+### Network Protection
+**VPN** implements encryption and encapsulation.
+**Encryption** should always be implemented so body can't be read.
+**Firewalls** can be configured to protect against IP spoofing.
 
 ### Tools
-
 #### tcpdump
 A light weight, unix text based, network protocol analyzer (a.k.a. packet sniffer) that displays key information about each packet in the terminal, including ...
 - **Timestamp**: The output begins with the timestamp, formatted as hours, minutes, seconds, and fractions of a second.  
@@ -953,3 +967,4 @@ Network protocol analyzers (packet sniffers) can be used as a baseline to
 - locate unauthorized traffic, access points, instant messaging
 Packet sniffers can also be used to capture sensitive information by attackers like usernames and passwords if the network is not properly protected.
 
+	
