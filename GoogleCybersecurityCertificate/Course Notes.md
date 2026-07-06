@@ -967,4 +967,31 @@ Network protocol analyzers (packet sniffers) can be used as a baseline to
 - locate unauthorized traffic, access points, instant messaging
 Packet sniffers can also be used to capture sensitive information by attackers like usernames and passwords if the network is not properly protected.
 
-	
+## Security Hardening
+To harden means to make stronger and more defensive. Security hardening can involve improving and keeping up to date devices, networks, software, firmware, databases, locks, cameras, emergency defaults, ultimately reducing the attack surface.
+**Attack surface** is a set of all the possible entry points for a attacker.
+
+### Operating System Hardening
+The OS is the middleman between software applications and the hardware. It is important to secure the OS of all devices on a network because one insecure OS could put the whole network and its devices in danger.
+
+Updates, backups, up to date inventory of devices and authorized users, encrypted drives, patch updates, MFA, strict password policies, 
+
+**Baseline Configuration (baseline image)** is a documented set of specifications within a system used as a basis for future builds, releases, and updates. e.g. includes a firewall rule that allows or disallows network ports. If unusual activity is detected, the current configuration can be compared with baseline image to see what was added that might have caused the issue. 
+
+**Brute Force attack** is a trial-and-error method of collecting private information from a device by continuously guessing credentials.
+- *Simple brute force attacks* are considered simple because attackers guess the credentials or have a program that goes through many possible credentials.
+- *Dictionary attacks* use a list of commonly used passwords and and credentials aka a dictionary to guess the password
+
+**Virtual Machines (VMs)** are software versions of physical computers that use a host computer's resources to run a different instance of an operating system. They can be isolated from the host allowing testing of suspicious files. Can be deleted and replaced. However there is still a risk that malware run on a VM can escape and affect the host machine/network. 
+
+**Sandbox Environments** have a similar idea to VMs where they are isolated environments from a network that can be used for testing patches, identifying and addressing bugs, detecting vulnerabilities, evaluate suspicious software, and simulate attack scenarios. However, attackers can code their malware to act normal when run on a VM, so there is still a risk if all details are not covered.
+
+**Prevent Brute Force**
+- *Salting and Hashin*g: hashing converts data into a unique rigid string of characters that is unique to the data. This helps with data integrity, making sure what is downloaded is the same as what was offered by a service. salting adds random characters to hashed passwords which increases the length and complexity of hash values. For instance, if 2 people are using `password` as their password, the hash values of the password stored would be the exact same for both, unless it is salted.
+- *MFA and 2FA*: requires a user to verify their identity in two or more ways before allowing access to a system or network. This involves using multiple modes of verification: usernames, passwords, fingerprints, face ID, one time password (OTP).
+- *CAPTCHA and reCAPTCHA*: Completely Automated Public Turing test to tell Computers and Humans Apart. Identifies weather a client is a human or bot. reCAPTCHA is a free CAPTCHA service offered by google to protect websites.
+- *Password policies*: standardize good password requirements/practices throughout an org. Could include the length, allowed characters, required characters, update frequency, re-usability, log in attempt limit, account suspension.
+### Network Hardening
+
+
+### Cloud Hardening
