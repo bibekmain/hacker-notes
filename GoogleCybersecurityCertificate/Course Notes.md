@@ -1015,7 +1015,17 @@ An operating system standard that branches out to many other publicly and privat
 ## SQL
 Used to query relational databases.
 A database can have multiple tables.
-A table has rows and columns. Each column has all values associated to an attribute. Each row is one instance/entry in the table.
+A table has rows and columns. Each column has all values associated to an attribute. Each row is one instance/unique-entry in the table.
 A key is the value inside that table column row.
-Primary keys are unique keys that only appear once in the table, like an ID number in the Employees table. Foreign keys are keys from outside the referenced table, used to create relational databases by allowing linking between the data in tables.
+Primary keys are unique keys that only appear once in the table, like an ID number. Foreign keys are keys from outside the referenced table, used to create relational databases by allowing linking between the data in tables.
+
+### Basic Commands
+**SELECT** is a SQL keyword that allows us to specify the column(s) to focus on in a table
+**FROM** indicates which table we want to look at in our database
+**WHERE** allows the use of conditions to filter the rows based on operators and logic
+**ORDER BY** allows us to specify a column to sort the table by and the sort's direction (ASC, DESC)
+**OR, AND, NOT** are logic operators that allow us to use multiple conditions when filtering
+
+### Join Tables
+
 
