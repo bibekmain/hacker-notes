@@ -489,7 +489,7 @@ Up to date information on web vulnerabilities:
 #### Antivirus software
 used to prevent, detect, and eliminate malware and viruses. AKA anti-malware. Can scan the memory and storage of a device to look for patterns and behaviors usually conducted by malware.
 #### Intrusion detection system (IDS)
-Analyzes system activities and alerts possible threats or intrusions. Scans network packets to identify potential threats to sensitive data. Can also potentially detect and flag theft and unauthorized access.
+Analyzes system activities and alerts possible threats or intrusions. Scans network packets to identify potential threats to sensitive data. Can also potentially detect and flag theft and unauthorized access. -- Attack Signatures
 #### Encryption
 The process of altering data to hide it's contents across the web or for safe keeping with the intent to decrypt once the data is needed. Converts plaintext to ciphertext.
 Encoding is converting data to a different format to allow programs to read it better or to obscure the data however it isn't the same as encryption and can be easily converted to original plaintext. e.g. base64, base2, base16 encoding.
@@ -987,11 +987,35 @@ Updates, backups, up to date inventory of devices and authorized users, encrypte
 **Sandbox Environments** have a similar idea to VMs where they are isolated environments from a network that can be used for testing patches, identifying and addressing bugs, detecting vulnerabilities, evaluate suspicious software, and simulate attack scenarios. However, attackers can code their malware to act normal when run on a VM, so there is still a risk if all details are not covered.
 
 **Prevent Brute Force**
-- *Salting and Hashin*g: hashing converts data into a unique rigid string of characters that is unique to the data. This helps with data integrity, making sure what is downloaded is the same as what was offered by a service. salting adds random characters to hashed passwords which increases the length and complexity of hash values. For instance, if 2 people are using `password` as their password, the hash values of the password stored would be the exact same for both, unless it is salted.
+- *Salting and Hashing*: hashing converts data into a unique rigid string of characters that is unique to the data. This helps with data integrity, making sure what is downloaded is the same as what was offered by a service. salting adds random characters to hashed passwords which increases the length and complexity of hash values. For instance, if 2 people are using `password` as their password, the hash values of the password stored would be the exact same for both, unless it is salted.
 - *MFA and 2FA*: requires a user to verify their identity in two or more ways before allowing access to a system or network. This involves using multiple modes of verification: usernames, passwords, fingerprints, face ID, one time password (OTP).
 - *CAPTCHA and reCAPTCHA*: Completely Automated Public Turing test to tell Computers and Humans Apart. Identifies weather a client is a human or bot. reCAPTCHA is a free CAPTCHA service offered by google to protect websites.
 - *Password policies*: standardize good password requirements/practices throughout an org. Could include the length, allowed characters, required characters, update frequency, re-usability, log in attempt limit, account suspension.
 ### Network Hardening
+Port filtering: firewall function that blocks or allows certain port numbers
+Network access privilege
+Port Filtering
+Encryption for communication
 
+Firewall rule maintenance
+Network log analysis, SIEM tool
+Patch updates
+Server backups
 
+Combine multiple tools to create a layered defense for a network.
+SIEM + IDS/IPS + FIREWALL
+*Security Information and Event Manager + Intrusion Detection/Prevention System + FIREWALL*
 ### Cloud Hardening
+---
+# 4. Linux and SQL
+
+## Linux
+An operating system standard that branches out to many other publicly and privately used open source operating systems. Used for computer and network analysis.
+
+## SQL
+Used to query relational databases.
+A database can have multiple tables.
+A table has rows and columns. Each column has all values associated to an attribute. Each row is one instance/entry in the table.
+A key is the value inside that table column row.
+Primary keys are unique keys that only appear once in the table, like an ID number in the Employees table. Foreign keys are keys from outside the referenced table, used to create relational databases by allowing linking between the data in tables.
+
