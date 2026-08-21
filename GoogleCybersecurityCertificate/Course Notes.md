@@ -1018,6 +1018,7 @@ A database can have multiple tables.
 A table has rows and columns. Each column has all values associated to an attribute. Each row is one instance/unique-entry in the table.
 A key is the value inside that table column row.
 Primary keys are unique keys that only appear once in the table, like an ID number. Foreign keys are keys from outside the referenced table, used to create relational databases by allowing linking between the data in tables.
+NULL represents missing values.
 
 ### Basic Commands
 **SELECT** is a SQL keyword that allows us to specify the column(s) to focus on in a table
@@ -1027,5 +1028,22 @@ Primary keys are unique keys that only appear once in the table, like an ID numb
 **OR, AND, NOT** are logic operators that allow us to use multiple conditions when filtering
 
 ### Join Tables
+![[Pasted image 20260820133033.png]]
+employee_id is the primary key in the employees table, and its a foreign key in the machines table.  employees.employee_id, machines.employee_id
 
+#### Inner Join
+Returns rows where the specified column matches in both tables
+![[Pasted image 20260820133922.png]]
+
+SELECT *
+FROM log_in_attempts
+INNER JOIN employees ON log_in_attempts.username = employees.username;
+*selects all columns from log_in_attempts and employees that match on username.*
+
+#### Outer Join
+##### Left Join
+
+##### Right join
+
+##### Full Outer Join
 
