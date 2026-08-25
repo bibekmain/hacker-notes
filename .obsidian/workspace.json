@@ -14,20 +14,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GoogleCybersecurityCertificate/INCOMPLETE - malware injection analysis.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "INCOMPLETE - malware injection analysis"
-            }
-          },
-          {
-            "id": "eabdb679696e0679",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "GoogleCybersecurityCertificate/Course Notes.md",
                 "mode": "source",
                 "source": false
@@ -36,8 +22,7 @@
               "title": "Course Notes"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "be7a44bb917847bc",
@@ -223,12 +208,19 @@
       "bases:Create new base": false
     }
   },
-  "active": "eabdb679696e0679",
+  "active": "6af98d5db84d46d3",
   "lastOpenFiles": [
+    "Pasted image 20260825021135.png",
+    "Pasted image 20260825013555.png",
+    "Pasted image 20260825013543.png",
+    "Pasted image 20260825013528.png",
+    "Pasted image 20260825013435.png",
     "Pasted image 20260820133922.png",
     "Pasted image 20260820133033.png",
-    "GoogleCybersecurityCertificate/INCOMPLETE - malware injection analysis.md",
+    "00 Syntax notes 00.md",
     "GoogleCybersecurityCertificate/Course Notes.md",
+    "GoogleCybersecurityCertificate/INCOMPLETE - malware injection analysis.md",
+    "GoogleCybersecurityCertificate/Untitled.md",
     "GoogleCybersecurityCertificate/tcpdump wireshark analysis.md",
     "GoogleCybersecurityCertificate/tcpdump analysis.md",
     "GoogleCybersecurityCertificate/certs/2ManageRisks.pdf",
@@ -243,7 +235,6 @@
     "README.md",
     "How to use AI.md",
     "study techniques.md",
-    "00 Syntax notes 00.md",
     "audio_waves_for_focus.md"
   ]
 }

@@ -1042,8 +1042,27 @@ INNER JOIN employees ON log_in_attempts.username = employees.username;
 
 #### Outer Join
 ##### Left Join
+![[Pasted image 20260825013528.png|398]]
+Returns rows that match on `c.id` and `o.customer_id` and all rows from the left(Customers c) table. All unmatched row entries on the left table are included with the value NULL for their id columns.
 
 ##### Right join
+![[Pasted image 20260825013543.png|405]]
+Returns rows that match on `c.id` and `o.customer_id` and all rows from the right(Orders o) table. All unmatched row entries on the right table are included with the value NULL for their id columns.
 
 ##### Full Outer Join
+![[Pasted image 20260825013555.png|410]]
+Returns all rows from both tables, matching when possible and fills NULL on unmatched row entries for either left or right tables.
+
+![[Pasted image 20260825013435.png]]
+
+## Aggregate Functions
+Aggregate functions are used to return a single aggregated value.
+There are various aggregate functions that perform different calculations:
+- COUNT returns a single number that represents the number of rows returned from your query.
+- AVG returns a single number that represents the average of the numerical data in a column.
+- SUM returns a single number that represents the sum of the numerical data in a column.
+Syntax:      ![[Pasted image 20260825021135.png]]
+
+[Reference guide: SQL](https://docs.google.com/document/d/1QVfrtp4QywbvQ5ALupN7-gKNrXI9yrYDv6PyCwWVAYg/template/preview)
+[Course 4 Glossary](https://docs.google.com/document/d/1ki6X7Q792RGNK8w0ltKIoB3So-8lqUx4Rdb7V94MdyM/template/preview?usp=sharing&resourcekey=0-z6oHYq011xfRKtaw-qXDMA "Course 4 glossary")
 
