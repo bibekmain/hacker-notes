@@ -1026,6 +1026,10 @@ NULL represents missing values.
 **WHERE** allows the use of conditions to filter the rows based on operators and logic
 **ORDER BY** allows us to specify a column to sort the table by and the sort's direction (ASC, DESC)
 **OR, AND, NOT** are logic operators that allow us to use multiple conditions when filtering
+**INNER JOIN**
+**LEFT JOIN**
+**RIGHT JOIN**
+**FULL OUTER JOIN**
 
 ### Join Tables
 ![[Pasted image 20260820133033.png]]
@@ -1066,3 +1070,23 @@ Syntax:      ![[Pasted image 20260825021135.png]]
 [Reference guide: SQL](https://docs.google.com/document/d/1QVfrtp4QywbvQ5ALupN7-gKNrXI9yrYDv6PyCwWVAYg/template/preview)
 [Course 4 Glossary](https://docs.google.com/document/d/1ki6X7Q792RGNK8w0ltKIoB3So-8lqUx4Rdb7V94MdyM/template/preview?usp=sharing&resourcekey=0-z6oHYq011xfRKtaw-qXDMA "Course 4 glossary")
 
+# 5. Assets, Threats, and Vulnerabilities
+[Cybersecurity Certificate glossary](https://docs.google.com/document/d/1Feb8pHRY-blnpaLOohds2esd6IWdCIp-ikG7G_omSj4/template/preview?usp=sharing&resourcekey=0-YHcAISkCiqGDq5KwO6yNeQ)
+Threat Modeling
+"No one is born knowing everything" - takes time and effort
+Security Risk Planning involves three elements: **assets, threats, and vulnerabilities**
+
+Recall 
+- **CIA** Confidentiality, Integrity, and Availability
+- **Risks** are things that can impact the CIA of an asset
+- **Assets** are items perceived to have value to an organization
+- **Threats** are any circumstances or events that can negatively impact assets
+- **Vulnerabilities** are weakness that can be exploited by a threat, i.e. flaws within an asset
+## Asset Security
+
+
+## Challenges in a Rapidly Changing Digital World
+
+
+
+## Policies, Standards, and Procedures
