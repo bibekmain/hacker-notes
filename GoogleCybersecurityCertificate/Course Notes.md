@@ -143,6 +143,20 @@ A manipulation technique that exploits human error to get access to private info
 - **USB baiting**: a threat actor strategically leaves a malware USB stick for an employee to find and install, unknowingly infecting a network.
 - **Physical social engineering**: a threat actor impersonates an employee, customer, or vendor to obtain unauthorized access to a physical location.
 
+### CISSP security domains
+
+These are core security concepts. These domains are related. Gaps in one domain can cause massive potential damage/loss.
+#### Security and Risk Management
+Defines security goals and objectives, risk mitigation, compliance, business continuity, and the law.
+#### Asset Security
+Securing digital and physical assets, storing, maintaining, retaining, and destroying data.
+#### Security Architecture and Engineering
+Optimizing data security by ensuring effective tools, systems, and processes are in place. Configuring a firewall, …
+#### Communications and Network Security
+Managing and securing physical networks and wireless communications. Creating network policies to prevent and mitigate exposure to threat actors.
+#### Identity and access management
+Keep data secure, ensure users follow established policies to control and manage physical assets, like office spaces, and logical assets, such as networks and apps. Validating identity.
+
 #### Social engineering principles
 
 Incredibly effective because people are generally trusting and respect authority.
@@ -159,19 +173,6 @@ Why are they so effective?
 
 ---  
 
-### CISSP security domains
-
-These are core security concepts. These domains are related. Gaps in one domain can cause massive potential damage/loss.
-#### Security and Risk Management
-Defines security goals and objectives, risk mitigation, compliance, business continuity, and the law.
-#### Asset Security
-Securing digital and physical assets, storing, maintaining, retaining, and destroying data.
-#### Security Architecture and Engineering
-Optimizing data security by ensuring effective tools, systems, and processes are in place. Configuring a firewall, …
-#### Communications and Network Security
-Managing and securing physical networks and wireless communications. Creating network policies to prevent and mitigate exposure to threat actors.
-#### Identity and access management
-Keep data secure, ensure users follow established policies to control and manage physical assets, like office spaces, and logical assets, such as networks and apps. Validating identity.
 #### Security assessment and testing
 Conducting security control testing, collecting and analyzing data, and conducting security audits to monitor for risks, threats, and vulnerabilities. e.g. regular audits of user permissions.
 #### Security operations
