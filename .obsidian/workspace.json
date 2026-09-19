@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GoogleCybersecurityCertificate/Course Notes.md",
+                "file": "overthewire.org/Bandit.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Course Notes"
+              "title": "Bandit"
             }
           }
         ]
@@ -35,7 +35,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GoogleCybersecurityCertificate/Course Notes.md",
+                "file": "overthewire.org/Bandit.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -210,21 +210,25 @@
   },
   "active": "6af98d5db84d46d3",
   "lastOpenFiles": [
-    "Pasted image 20260825021135.png",
-    "Pasted image 20260825013555.png",
-    "Pasted image 20260825013543.png",
-    "Pasted image 20260825013528.png",
     "Pasted image 20260825013435.png",
+    "overthewire.org/Bandit.md",
+    "overthewire.org",
     "Pasted image 20260820133922.png",
     "Pasted image 20260820133033.png",
-    "00 Syntax notes 00.md",
+    "Pasted image 20260622125101.png",
     "GoogleCybersecurityCertificate/Course Notes.md",
+    "Pasted image 20260825013543.png",
+    "00 Syntax notes 00.md",
+    "audio_waves_for_focus.md",
+    "How to use AI.md",
+    "Pasted image 20260825021135.png",
+    "Pasted image 20260825013555.png",
+    "Pasted image 20260825013528.png",
     "GoogleCybersecurityCertificate/INCOMPLETE - malware injection analysis.md",
     "GoogleCybersecurityCertificate/Untitled.md",
     "GoogleCybersecurityCertificate/tcpdump wireshark analysis.md",
     "GoogleCybersecurityCertificate/tcpdump analysis.md",
     "GoogleCybersecurityCertificate/certs/2ManageRisks.pdf",
-    "Pasted image 20260622125101.png",
     "GoogleCybersecurityCertificate/templates",
     "Books/HackingandSecurityBook/README.md",
     "Books",
@@ -233,8 +237,6 @@
     "GoogleCybersecurityCertificate/certs/1Foundations.pdf",
     "GoogleCybersecurityCertificate/certs",
     "README.md",
-    "How to use AI.md",
-    "study techniques.md",
-    "audio_waves_for_focus.md"
+    "study techniques.md"
   ]
 }

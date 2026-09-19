@@ -1075,7 +1075,6 @@ Syntax:      ![[Pasted image 20260825021135.png]]
 [Cybersecurity Certificate glossary](https://docs.google.com/document/d/1Feb8pHRY-blnpaLOohds2esd6IWdCIp-ikG7G_omSj4/template/preview?usp=sharing&resourcekey=0-YHcAISkCiqGDq5KwO6yNeQ)
 Threat Modeling
 "No one is born knowing everything" - takes time and effort
-Security Risk Planning involves three elements: **assets, threats, and vulnerabilities**
 
 Recall 
 - **CIA** Confidentiality, Integrity, and Availability
@@ -1083,11 +1082,50 @@ Recall
 - **Assets** are items perceived to have value to an organization
 - **Threats** are any circumstances or events that can negatively impact assets
 - **Vulnerabilities** are weakness that can be exploited by a threat, i.e. flaws within an asset
-## Asset Security
+
+Security Risk Planning involves three elements: **assets, threats, and vulnerabilities**
+## Assets
+**Asset Management** is the process of tracking assets and the risks that affect them.
+1. **Asset Inventory** is a list of assets that need protection
+- *Digital assets* such as customer data or financial records.
+- *Information systems* that process data, like networks or software.
+- *Physical assets* which can include facilities, equipment, or supplies.
+- *Intangible assets* such as brand reputation or intellectual property.
+1. **Asset Classification** is labeling assets based on significance and importance
+- *Public*: assets available to the public
+- *Internal Only*: assets share internally never externally
+- *Confidential*: assets not known by all inside, only those working on a specific pr·
+- *Restricted*: assets that are on a "need to know", only accessed when absolutely necessary
 
 
-## Challenges in a Rapidly Changing Digital World
+- **Policies**: 
+	- Regulations
+- **Standards**: 
+- **Procedures**: 
 
 
+**NIST Cybersecurity Framework (CSF)** a voluntary set of policies, standards, and procedures to manage cybersecurity risk
+- **Core**: functions of a security plan
+	- Identify
+	- Protect
+	- Detect
+	- Respond
+	- Recover
+	- Govern
+- **Tiers**: a way to measure security posture across/performance the 5 functions in core. Designed to show what is and isn't working.
+	- *Level-1 Passive*: a function is reaching bare minimum standards
+	- *Level-2 Adaptive*: function is performing at exemplary standard
+	- Level-3 
+	- Level-4 
+- **Profiles**: provide insight into the current state of a security plan
+	- for example snapshots of an os installation
+	- something to develop a baseline
 
-## Policies, Standards, and Procedures
+CSF. This is a quick overview and summary of their recommendations:
+- **Create a current profile** of the security operations and outline the specific needs of your business.
+- **Perform a risk assessment** to identify which of your current operations are meeting business and regulatory standards.
+- **Analyze and prioritize existing gaps** in security operations that place the businesses assets at risk.
+- **Implement a plan of action** to achieve your organization’s goals and objectives.
+**Pro tip:** Always consider current risk, threat, and vulnerability trends when using the NIST CSF.
+
+## Protect Organizational Assets
