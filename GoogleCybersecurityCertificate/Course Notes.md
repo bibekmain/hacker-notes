@@ -1128,4 +1128,20 @@ CSF. This is a quick overview and summary of their recommendations:
 - **Implement a plan of action** to achieve your organization’s goals and objectives.
 **Pro tip:** Always consider current risk, threat, and vulnerability trends when using the NIST CSF.
 
-## Protect Organizational Assets
+### Protect Organizational Assets
+**Security Controls**
+**Principle of least privilege**
+**Cryptography**:
+**Public Key Infrastructure**
+**Symmetric encryption**: 
+**Asymmetric enryption**: 
+Non-repudiation:
+Hashing:
+Hash Value:
+Hash Functions:
+Access Control:
+Authentication, Authorization, Accounting (AAA):
+Single Sign On (SSO)
+Multi Factor Authentication (MFA)
+User Audit
+Identity and Access management
