@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "overthewire.org/Bandit.md",
+                "file": "tryhackme/TryHackMe Notes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bandit"
+              "title": "TryHackMe Notes"
             }
           }
         ]
@@ -35,7 +35,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "overthewire.org/Bandit.md",
+                "file": "tryhackme/TryHackMe Notes.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -210,8 +210,10 @@
   },
   "active": "6af98d5db84d46d3",
   "lastOpenFiles": [
-    "GoogleCybersecurityCertificate/Course Notes.md",
     "overthewire.org/Bandit.md",
+    "tryhackme/TryHackMe Notes.md",
+    "tryhackme",
+    "GoogleCybersecurityCertificate/Course Notes.md",
     "Pasted image 20260825013435.png",
     "overthewire.org",
     "Pasted image 20260820133922.png",
